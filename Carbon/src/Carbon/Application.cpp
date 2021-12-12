@@ -5,13 +5,18 @@
 
 namespace Carbon {
 
+	Application* Application::s_Instance = nullptr;
 
 	Application::Application()
 	{
+		if (!s_Instance)
+			s_Instance = this;
 		Log::Init();
 		const WindowData args;
-		m_Window = std::shared_ptr<Window>(Window::Create(args));
+		m_Window = std::unique_ptr<Window>(Window::Create(args));
 		m_Window->SetEventCallback(BIND_FN(Application::OnEvent));
+		m_ImGuiLayer = new ImGuiLayer();
+		PushOverlay(m_ImGuiLayer);
 	}
 
 	Application::~Application()
@@ -30,6 +35,13 @@ namespace Carbon {
 			{
 				(*it)->OnUpdate();
 			}
+
+			m_ImGuiLayer->Begin();
+			for (auto it = m_LayerStack.begin(); it != m_LayerStack.end(); ++it)
+			{
+				(*it)->OnImGuiRender();
+			}
+			m_ImGuiLayer->End();
 
 			m_Window->OnUpdate();
 		}

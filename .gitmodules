@@ -7,3 +7,4 @@
 [submodule "Carbon/vendor/imgui"]
 	path = Carbon/vendor/imgui
 	url = https://github.com/SuperDino484/imgui
+	ignore = untracked
