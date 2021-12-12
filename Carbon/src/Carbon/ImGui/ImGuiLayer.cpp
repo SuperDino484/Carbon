@@ -10,8 +10,6 @@
 
 namespace Carbon {
 
-	
-
 	void ImGuiLayer::OnAttach()
 	{
 		ImGui::CreateContext();

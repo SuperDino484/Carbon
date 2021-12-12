@@ -9,7 +9,7 @@ public:
 
 	void OnUpdate() override
 	{
-		
+
 	}
 
 	void OnEvent(Carbon::Event& e) override

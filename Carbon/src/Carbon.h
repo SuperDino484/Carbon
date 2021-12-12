@@ -8,5 +8,8 @@
 #include "Carbon/Layer.h"
 #include "Carbon/Log.h"
 #include "Carbon/ImGui/ImGuiLayer.h"
+#include "Carbon/Input.h"
+#include "Carbon/KeyCodes.h"
+#include "Carbon/MouseButtonCodes.h"
 
 #include "Carbon/EntryPoint.h"

@@ -12,7 +12,8 @@ project "Carbon"
 
     files {
         "src/**.cpp",
-        "src/**.h"
+        "src/**.h",
+        "vendor/glm/glm/**.hpp"
     }
 
     includedirs {

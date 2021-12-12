@@ -7,3 +7,6 @@
 [submodule "Carbon/vendor/imgui"]
 	path = Carbon/vendor/imgui
 	url = https://github.com/SuperDino484/imgui
+[submodule "Carbon/vendor/glm"]
+	path = Carbon/vendor/glm
+	url = https://github.com/g-truc/glm
