@@ -35,8 +35,9 @@ bin/
 bin-int/
 .vs
 *.vcxproj
-*.vcxproj
-*.vcxproj
 *.filters
 *.user
 *.sln
+Carbon/vendor/imgui/bin/
+Carbon/vendor/imgui/bin-int/
+Carbon/vendor/imgui/ImGui.vcxproj
