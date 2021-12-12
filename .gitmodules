@@ -1,0 +1,9 @@
+[submodule "Carbon/vendor/GLFW"]
+	path = Carbon/vendor/GLFW
+	url = https://github.com/SuperDino484/glfw
+[submodule "Carbon/vendor/spdlog"]
+	path = Carbon/vendor/spdlog
+	url = https://github.com/gabime/spdlog
+[submodule "Carbon/vendor/imgui"]
+	path = Carbon/vendor/imgui
+	url = https://github.com/SuperDino484/imgui
