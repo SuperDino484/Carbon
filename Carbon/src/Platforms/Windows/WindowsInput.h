@@ -1,10 +1,9 @@
 #pragma once
-
 #include "Carbon/Input.h"
 
 namespace Carbon {
 
-	class OpenGLInput : public Input
+	class WindowsInput : public Input
 	{
 	protected:
 		bool IsKeyPressedImpl(int keycode) override;
@@ -12,7 +11,6 @@ namespace Carbon {
 		bool IsMouseButtonPressedImpl(int button) override;
 		bool IsMouseButtonReleasedImpl(int button) override;
 		std::pair<float, float> GetMousePositionImpl() override;
-
 	};
 
 }
